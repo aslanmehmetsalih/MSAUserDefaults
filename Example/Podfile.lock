@@ -1,0 +1,16 @@
+PODS:
+  - MSAUserDefaults (0.1.0)
+
+DEPENDENCIES:
+  - MSAUserDefaults (from `../`)
+
+EXTERNAL SOURCES:
+  MSAUserDefaults:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MSAUserDefaults: 471268be5832cb68bbec5911b9413c242dbc0fe4
+
+PODFILE CHECKSUM: d941fa997aaad73343418d179adb0a9056de6122
+
+COCOAPODS: 1.5.3
