@@ -1,5 +1,5 @@
 PODS:
-  - MSAUserDefaults (0.1.0)
+  - MSAUserDefaults (1.0.0)
 
 DEPENDENCIES:
   - MSAUserDefaults (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MSAUserDefaults: 471268be5832cb68bbec5911b9413c242dbc0fe4
+  MSAUserDefaults: f18aaa1d9f50e53713fa3c57a45381bc5ac46229
 
 PODFILE CHECKSUM: d941fa997aaad73343418d179adb0a9056de6122
 

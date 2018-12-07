@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import MSAUserDefaults
+
+extension DefaultsKey {
+    static let firstStart = Key<Bool>("firstStart")
+}
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        if let _ = DefaultsKey.firstStart.value {
+            label.text = "app was launched earlier"
+        } else {
+            DefaultsKey.firstStart.value = true
+            label.text = "first time app launch"
+        }
     }
 
     override func didReceiveMemoryWarning() {
