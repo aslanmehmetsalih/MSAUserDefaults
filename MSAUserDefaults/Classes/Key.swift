@@ -21,4 +21,21 @@ public class Key<ValueType>: DefaultsKey {
         }
     }
     
+    let key: String!
+    
+    public init(key: String) {
+        self.key = key
+    }
+    
+    /// Removes a value using 'key'
+    public func remove() {
+        Defaults.removeObject(forKey: key)
+        Defaults.synchronize()
+    }
+    
+    /// Returns `true` if `key` exists
+    public var has: Bool {
+        return Defaults.object(forKey: key) != nil
+    }
+    
 }

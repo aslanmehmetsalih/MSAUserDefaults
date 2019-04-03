@@ -7,12 +7,12 @@
 
 import Foundation
 
-public let Defaults = UserDefaults.standard
+public var Defaults = UserDefaults.standard
 
 public extension UserDefaults {
     
     /// Removes a values using 'keys'
-    func remove(_ keys: [DefaultsKey]) {
+    func remove(_ keys: [Key<Any>]) {
         for key in keys {
             removeObject(forKey: key.key)
             

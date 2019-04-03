@@ -1,11 +1,6 @@
 use_frameworks!
 
-target 'MSAUserDefaults_Example' do
-  pod 'MSAUserDefaults', :path => '../'
+target 'MSAUserDefaults_Tests' do
+    pod 'MSAUserDefaults', :path => '../'
 
-  target 'MSAUserDefaults_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

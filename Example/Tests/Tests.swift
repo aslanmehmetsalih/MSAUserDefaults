@@ -2,12 +2,12 @@ import XCTest
 import MSAUserDefaults
 
 extension DefaultsKey {
-    static let stringKey = Key<String>("stringKey")
-    static let intKey = Key<Int>("intKey")
-    static let boolKey = Key<Bool>("boolKey")
-    static let doubleKey = Key<Double>("doubleKey")
-    static let dateKey = Key<Date>("dateKey")
-    static let arrayKey = Key<[String]>("arrayKey")
+    static let stringKey = Key<String>(key: "stringKey")
+    static let intKey = Key<Int>(key: "intKey")
+    static let boolKey = Key<Bool>(key: "boolKey")
+    static let doubleKey = Key<Double>(key: "doubleKey")
+    static let dateKey = Key<Date>(key: "dateKey")
+    static let arrayKey = Key<[String]>(key: "arrayKey")
 }
 
 class Tests: XCTestCase {
@@ -57,6 +57,7 @@ class Tests: XCTestCase {
     func testDouble() {
         // Value
         let value = 999.9
+        Defaults = UserDefaults.standard
         
         // Save
         DefaultsKey.doubleKey.value = value
